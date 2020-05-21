@@ -1,0 +1,21 @@
+{{!-- Csurf protection is necessary to protect the user information from getting stolen, even if the user info is stolen,
+the hacker is not able to create sessions with the user's information --}}
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <h1>Sign Up</h1>
+        <form action="/user/signup" method = "post">
+            <div class = "form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" class="form-control">
+            </div>
+            <div class = "form-group">
+                <label for="email">Password</label>
+                <input type="password" id="password" name="password" class="form-control">
+                {{!-- Password needs to be hashed before it is stored in the DB --}}
+                {{!-- There is a method required to validate the password that is hashed when signing in --}}
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        {{!-- {{ csrfToken }} --}}
+    </div>
+</div>

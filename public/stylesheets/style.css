@@ -1,0 +1,14 @@
+.card img {
+    max-height: 150px;
+}
+.card .title {
+    text-align: center ;
+ }
+.card .description {
+   color:#7F7F7F ;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
